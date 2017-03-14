@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+	<head>
+		<title>Clinico/Home</title>
+		<meta charset="utf-8">
+		<meta name="description" content="It's How Medicine Should Be">
+		<meta name="keywords" content="Clinico, Medical Services">
+		<meta name="author" content="010624">
+		<link rel="stylesheet" type="text/css" href="clinicostyle.css">
+		<style>
+			.flip3D{ width:240px; height:200px; margin:10px; float:left; }
+			.flip3D > .front{
+				position:absolute;
+				-webkit-transform: perspective( 600px ) rotateY( 0deg );
+				transform: perspective( 600px ) rotateY( 0deg );
+				background:#FC0; width:240px; height:200px; border-radius: 7px;
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+				transition: -webkit-transform .5s linear 0s;
+				transition: transform .5s linear 0s;
+			}
+			.flip3D > .back{
+				position:absolute;
+				-webkit-transform: perspective( 600px ) rotateY( 180deg );
+				transform: perspective( 600px ) rotateY( 180deg );
+				background: #cbcbcb; width:240px; height:200px; border-radius: 7px;
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+				text-align:center;
+				font-family:Tel;
+				transition: -webkit-transform .5s linear 0s;
+				transition: transform .5s linear 0s;
+			}
+			.flip3D:hover > .front{
+				-webkit-transform: perspective( 600px ) rotateY( -180deg );
+				transform: perspective( 600px ) rotateY( -180deg );
+			}
+			.flip3D:hover > .back{
+				-webkit-transform: perspective( 600px ) rotateY( 0deg );
+				transform: perspective( 600px ) rotateY( 0deg );
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<div id="header">
+				<div id="h_top">
+					
+						<div id="contact_info">
+							<div id="left"><img src="images/contact.jpg"></div>
+							<div id="left"><p>022-22222222</p></div>
+							<div id="left"><img src="images/mail.jpg"></div>
+							<div id="left"><p>info@Clinico.com</p></div>
+						</div>
+				</div>
+				
+				<div id="h_cen">
+					<div id="logo">
+						<a href="index.html"><img src="images/logo3.jpg" alt="Clinico"></a>
+					</div>
+					<div id="search">
+						<form>
+							<div id="left"><input type="text" name="search" class="round" placeholder="Search....."/></div>
+							<div id="left"><input type="image" src="images/search.jpg" alt="Submit" class="button"></div>
+						</form>
+					</div>
+				</div>
+				
+				
+				<div id="h_bot">
+					<div id="menu_cover">
+						<ul class="menu">
+							<li><a href="home.html">Home</a></li>
+							<li id="Appoint"><a href="depart.html">Departments</a></li>
+							<li><a href="services.html">Care Areas</a></li>
+							<li><a href="findDoctor.html">Find A Doctor</a></li>
+							<li><a href="book.html">Book An Appointment</a></li>
+							<li><a href="phylog.html">Physician Login</a></li>
+							<li><a href="mychart.html">MyChart</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div id="cont">
+				<div id="title"><p>Departments</p></div>
+				
+				
+					<div id="Pick_me">
+						<div class="drape"><p>GENERAL CARE</p></div>
+						<div style="float:left;">
+							<div class="flip3D">
+							<div class="back">Doctor One</div>
+							<div class="front"><img src="images/doctor2.jpg" height="200" width="240"></div>
+							</div>
+							<div align="center"><button class="button1" type="reset" value="Reset">View Profile</button></div>
+						</div>
+						<div style="float:left;">
+							<div class="flip3D">
+							<div class="back">Doctor Two</div>
+							<div class="front"><img src="images/doctor4.jpg" height="200" width="240"></div>
+							</div>
+							<div align="center"><button class="button1" type="reset" value="Reset">View Profile</button></div>
+						</div>
+					</div>
+				
+				
+					
+						<div id="Pick_me">
+							<div class="drape"><p>CARDIOLOGY</p></div>
+							<div style="float:left;">
+								<div class="flip3D">
+								<div class="back">Doctor One</div>
+								<div class="front"><img src="images/doctor5.jpg" height="200" width="240"></div>
+								</div>
+								<div align="center"><button class="button1" type="reset" value="Reset">View Profile</button></div>
+							</div>
+							<div style="float:left;">
+								<div class="flip3D">
+								<div class="back">Doctor Two</div>
+								<div class="front"><img src="images/doctor7.jpg" height="200" width="240"></div>
+								</div>
+								<div align="center"><button class="button1" type="reset" value="Reset">View Profile</button></div>
+							</div>
+						</div>
+					
+					
+					
+						<div id="Pick_me">
+							<div class="drape"><p>DERMATOLOGY</p></div>
+							<div style="float:left;">
+								<div class="flip3D">
+								<div class="back">Doctor One</div>
+								<div class="front"><img src="images/doctor13.jpg" height="200" width="240"></div>
+								</div>
+								<div align="center"><button class="button1" type="reset" value="Reset">View Profile</button></div>
+							</div>
+							<div style="float:left;">
+								<div class="flip3D">
+								<div class="back">Doctor Two</div>
+								<div class="front"><img src="images/doctor14.jpg" height="200" width="240"></div>
+								</div>
+								<div align="center"><button class="button1" type="reset" value="Reset">View Profile</button></div>
+							</div>
+						</div>
+					
+					
+					
+					
+						<div id="Pick_me">
+							<div class="drape"><p>OPTHALMOLOGY</p></div>
+							<div style="float:left;">
+								<div class="flip3D">
+								<div class="back">Doctor One</div>
+								<div class="front"><img src="images/doctor16.jpg" height="200" width="240"></div>
+								</div>
+								<div align="center"><button class="button1" type="reset" value="Reset">View Profile</button></div>
+							</div>
+							<div style="float:left;">
+								<div class="flip3D">
+								<div class="back">Doctor Two</div>
+								<div class="front"><img src="images/doctor15.jpg" height="200" width="240"></div>
+								</div>
+								<div align="center"><button class="button1" type="reset" value="Reset">View Profile</button></div>
+							</div>
+						</div>
+						<div id="Pick_me" style="margin-left:375px">
+							<div class="drape"><p>ORTHOPAEDICS</p></div>
+							<div style="float:left;">
+								<div class="flip3D">
+								<div class="back">Doctor One</div>
+								<div class="front"><img src="images/doctor8.jpg" height="200" width="240"></div>
+								</div>
+								<div align="center"><button class="button1" type="reset" value="Reset">View Profile</button></div>
+							</div>
+							<div style="float:left;">
+								<div class="flip3D">
+								<div class="back">Doctor Two</div>
+								<div class="front"><img src="images/doctor17.jpg" height="200" width="240"></div>
+								</div>
+								<div align="center"><button class="button1" type="reset" value="Reset">View Profile</button></div>
+							</div>
+						</div>
+				
+				</div>
+			</div>
+			
+			<div id="footer">
+				<div  id="mleft">
+					<div  id="m1left">
+						<div><img src="images/location.jpg"></div>
+						<div><p>Clinico</p></div>
+					</div>
+					<div id="m2left">
+						<p>Gallifrey DW,<br>Galactic Coordinates | 10-0-11-0-0 by 0-2<br>From Galactic Zero Centre</p>
+					</div>
+					<div id="media">
+						<br>
+						<a href="https://www.facebook.com"><img src="images/facebook.jpg"></a>
+						<a href="https://www.twitter.com"><img src="images/twitter.jpg"></a>
+						<a href="https://www.youtube.com"><img src="images/youtube.jpg"></a>
+						<a href="https://www.linkedin.com"><img src="images/linkedin.jpg"></a>
+					</div>
+					<div>
+						
+					</div>
+					
+				</div>
+				
+				<div id="mleft">
+					<div id="m1left"><p>About Us</p></div>
+					<div id="m2left">
+						<p>
+							<a href="#">History</a><br>
+							<a href="#">Hospital Amenities</a><br>
+							<a href="#">Awards and Accreditations</a><br>
+							<a href="#">News and Media</a>
+						</p>
+					</div>
+				</div>
+				
+				<div id="mleft">
+					<div id="m1left"><p>Billing and Insurance</p></div>
+					<div id="m2left">
+						<p>
+							<a href="#">MyChart</a><br>
+							<a href="#">Billing Questions</a><br>
+							<a href="#">Finanacial Assistance</a><br>
+							<a href="#">Pay a Bill</a><br>
+							<a href="#">Insurance Information</a>
+						</p>
+					</div>	
+				</div>
+				<div id="mleft">
+					<div id="m1left"><p>For Medical Professionals</p></div>
+					<div id="m2left">
+						<p>
+							<a href="#">Physician Login</a><br>
+							<a href="#">For Physicians</a><br>
+							<a href="#">For Nurses</a><br>
+						</p>
+					</div>
+					
+				</div>
+				
+				
+			</div>
+			
+			<div id="end">
+				<h5 id="dead_center">Copyright &copy2016 Clinico | All rights reserved</h5>
+			</div>
+		</div>
+	</body>

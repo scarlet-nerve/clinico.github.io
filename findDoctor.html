@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+	<head>
+		<title>Clinico/Find A Doctor</title>
+		<meta charset="utf-8">
+		<meta name="description" content="It's How Medicine Should Be">
+		<meta name="keywords" content="Clinico, Medical Services">
+		<meta name="author" content="010624">
+		<link rel="stylesheet" type="text/css" href="clinicostyle.css">
+	</head>
+	
+	<body>
+		<div>
+			<div id="header">
+				<div id="h_top">
+					
+						<div id="contact_info">
+							<div id="left"><img src="images/contact.jpg"></div>
+							<div id="left"><p>022-22222222</p></div>
+							<div id="left"><img src="images/mail.jpg"></div>
+							<div id="left"><p>info@Clinico.com</p></div>
+						</div>
+				</div>
+				
+				<!--<img id="pulse" src="images/AmDone2.jpg" alt="Clinico">-->
+				<div id="h_cen">
+					<div id="logo">
+						<a href="index.html"><img src="images/logo3.jpg" alt="Clinico"></a>
+					</div>
+					<div id="search">
+						<script>
+						  (function() {
+							var cx = '001507169918064560355:mzktbd6vv6m';
+							var gcse = document.createElement('script');
+							gcse.type = 'text/javascript';
+							gcse.async = true;
+							gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+							var s = document.getElementsByTagName('script')[0];
+							s.parentNode.insertBefore(gcse, s);
+						  })();
+						</script>
+						<gcse:search></gcse:search>
+							   
+					</div>
+				</div>
+				
+				
+				<div id="h_bot">
+					<div id="menu_cover">
+						<ul class="menu">
+							<li><a href="home.html">Home</a></li>
+							<li><a href="depart.html">Departments</a></li>
+							<li><a href="services.html">Care Areas</a></li>
+							<li id="Appoint"><a href="findDoctor.html">Find A Doctor</a></li>
+							<li><a href="book.html">Book An Appointment</a></li>
+							<li><a href="mychart.html">MyChart</a></li>
+							<li><a href="phylog.html">Physician Login</a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div id="cont">
+				<script>
+				function populate(s1,s2){
+					var s1 = document.getElementById(s1);
+					var s2 = document.getElementById(s2);
+					s2.innerHTML = "";
+					if(s1.value == "General Care"){
+						var optionArray = ["default|Select Doctor","arvind pradhan|Arvind Pradhan","unmesh inamdar|Unmesh Inamdar"];
+					}
+					else if(s1.value == "Cardiology"){
+						var optionArray = ["default|Select Doctor","ashwin mehta|Ashwin Mehta","nitin burthuks|Nitin Burthuks"];
+					}
+					else if(s1.value == "Dermatology"){
+						var optionArray = ["default|Select Doctor","neha pandit|Neha Pandit","gaurav bombe|Gaurav Bombe"];
+					}
+					else if(s1.value == "Opthamology"){
+						var optionArray = ["default|Select Doctor","shruti gawade|Shruti Gawade","tanmay kolhatkar|Tanmay Kolhatkar"];
+					}
+					else if(s1.value == "Orthopaedics"){
+						var optionArray = ["default|Select Doctor","sunil ailani|Sunil Ailani","prathamesh govilkar|Prathamesh Govilkar"];
+					}
+					for(var option in optionArray){
+						var pair = optionArray[option].split("|");
+						var newOption = document.createElement("option");
+						newOption.value = pair[0];
+						newOption.innerHTML = pair[1];
+						s2.options.add(newOption);
+					}
+				}
+				</script>
+				<form class="form">
+				<center>
+				<legend class="siz">Find A Doctor</legend>
+				<table style="margin-top:10px" cellspacing="10">
+					<tr>
+					<td><label >Department :</label></td>
+						<td><select class="round1" id="slct1" name="slct1" style="width:165px" onchange="populate(this.id,'slct2')">
+							<option value="Default">Select Department</option>
+							<option value="General Care">General Care</option>
+							<option value="Cardiology">Cardiology</option>
+							<option value="Dermatology">Dermatology</option>
+							<option value="Opthamology">Opthamology</option>
+							<option value="Orthopaedics">Orthopaedics</option>
+						</select></td>
+						</tr>
+						<tr>
+							<td><label>Our Doctors :</label></td>
+							<td><select class="round1" id="slct2" name="slct2" style="width:165px" placeholder="Doctor">
+							<option value="Default">Select Doctor</option>
+							</select></td>
+						</tr>
+					</table></center>
+				</form>
+
+			</div>
+			
+			<div id="footer">
+				<div  id="mleft">
+					<div  id="m1left">
+						<div><img src="images/location.jpg"></div>
+						<div><p>Clinico</p></div>
+					</div>
+					<div id="m2left">
+						<p>Gallifrey DW,<br>Galactic Coordinates | 10-0-11-0-0 by 0-2<br>From Galactic Zero Centre</p>
+					</div>
+					<div id="media">
+						<br>
+						<a href="https://www.facebook.com" target="_blank"><img src="images/facebook.jpg"></a>
+						<a href="https://www.twitter.com" target="_blank"><img src="images/twitter.jpg"></a>
+						<a href="https://www.youtube.com" target="_blank"><img src="images/youtube.jpg"></a>
+						<a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.jpg"></a>
+					</div>
+					<div>
+						
+					</div>
+					
+				</div>
+				
+				<div id="mleft">
+					<div id="m1left"><p>About Us</p></div>
+					<div id="m2left">
+						<p>
+							<a href="home.html">History</a><br>
+							<a href="services.html">Hospital Amenities</a><br>
+							<a href="#">Awards and Accreditations</a><br>
+							<a href="#">News and Media</a>
+						</p>
+					</div>
+				</div>
+				
+				<div id="mleft">
+					<div id="m1left"><p>Billing and Insurance</p></div>
+					<div id="m2left">
+						<p>
+							<a href="mychart.html">MyChart</a><br>
+							<a href="#">Billing Questions</a><br>
+							<a href="#">Finanacial Assistance</a><br>
+							<a href="#">Pay a Bill</a><br>
+							<a href="#">Insurance Information</a>
+						</p>
+					</div>	
+				</div>
+				<div id="mleft">
+					<div id="m1left"><p>For Medical Professionals</p></div>
+					<div id="m2left">
+						<p>
+							<a href="phylog.html">Physician Login</a><br>
+							<a href="#">For Physicians</a><br>
+							<a href="#">For Nurses</a><br>
+						</p>
+					</div>
+					
+				</div>
+				
+				
+			</div>
+			
+			<div id="end">
+				<h5 id="dead_center">Copyright &copy2016 Clinico | All rights reserved</h5>
+			</div>
+		</div>
+	</body>
